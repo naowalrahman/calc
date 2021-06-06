@@ -56,7 +56,7 @@ cd python-calculator
 sudo sh ./install.sh 
 ```
 
-To update the calculator simply run `calc-update` in your  terminal.
+To update the calculator simply run `calc-update` in your  terminal. To uninstall the calculator, run the `uninstall.sh` file from the cloned git repository with the command `sudo sh ./uninstall.sh`. 
 
 ## Contributions 
 Any contributions are welcome! If any issue arises, make an issue in the issues tab. If you want to contribute to this calculator, feel free to start a pull request! 
@@ -65,3 +65,4 @@ Any contributions are welcome! If any issue arises, make an issue in the issues 
 - [ ] Make two different versions of the calculator - one minimal edition and another feature edition. 
 - [ ] Put algebra support into the calculator. 
 - [ ] Make the calculator ignore python-specific functions and expressions and only recognize math expressions. 
+- [X] Make uninstall script. 
