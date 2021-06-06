@@ -1,4 +1,7 @@
 # Calc - Python Calculator
+
+![Calculator showcase in terminal](/showcase.gif)
+
 Calc is a basic terminal-based calculator in python that uses the `eval()` function with user input for its main usage. 
 
 Though there are lots of GUI calculators for \*NIX systems, many of them are either so feature packed that they become annoying to use for basic use, or are just impractical to use. Thus, I wanted to create a calculator in python that could be used from the terminal but also make sure that it was hackable and not bloated. 
