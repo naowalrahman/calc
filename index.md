@@ -8,23 +8,16 @@ Though there are lots of GUI calculators for \*NIX systems, many of them are eit
 
 It is simple to use, easy to hack, and very fast. 
 
-## Adding More Functionality
+## Installation
 
-To add more functionality into the calculator, simply import more functions from the `math` module at the beginning of the `main.py` file. For example, the default functions available are imported as: 
-
-```python 
-########## USER IMPORTS ##########
-from math import radians, degrees, sqrt, pi
+There is an installation script provided that automatically adds the program to `$PATH` for all users, so it is a very easy installation. To install, use the following commands: 
+```sh 
+git clone https://github.com/naowalrahman/python-calculator.git
+cd python-calculator 
+sudo sh ./install.sh 
 ```
 
-But, if you wanted to add, say, the `ceil` function, simply append it to the end of the first line with a comma, like so: 
-
-```python
-########## USER IMPORTS ##########
-from math import radians, degrees, sqrt, pi, ceil
-```
-
-This non-bloated and suckless approach to adding more functionality makes for more practicality of the calculator. However, the other import functions after the user imports should be modified as they are designed to be used for the custom functions defined later on, which are used for degree-based trigonometry. 
+To update the calculator simply run `calc-update` in your  terminal. To uninstall the calculator, run the `uninstall.sh` file from the cloned git repository with the command `sudo sh ./uninstall.sh`. 
 
 ## Basic Usage
 
@@ -54,20 +47,27 @@ The default functions included are sine, cosine, tangent, inverse sine, inverse 
 
 At anytime, you can type `help` into the calculator to get a list of these function names. To exit the calculator, type `exit` or `q`. To clear the screen, type `clear`. 
 
-## Installation
+## Adding More Functionality
 
-There is an installation script provided that automatically adds the program to `$PATH` for all users, so it is a very easy installation. To install, use the following commands: 
-```sh 
-git clone https://github.com/naowalrahman/python-calculator.git
-cd python-calculator 
-sudo sh ./install.sh 
+To add more functionality into the calculator, simply import more functions from the `math` module at the beginning of the `main.py` file. For example, the default functions available are imported as: 
+
+```python 
+########## USER IMPORTS ##########
+from math import radians, degrees, sqrt, pi
 ```
 
-To update the calculator simply run `calc-update` in your  terminal. To uninstall the calculator, run the `uninstall.sh` file from the cloned git repository with the command `sudo sh ./uninstall.sh`. 
+But, if you wanted to add, say, the `ceil` function, simply append it to the end of the first line with a comma, like so: 
+
+```python
+########## USER IMPORTS ##########
+from math import radians, degrees, sqrt, pi, ceil
+```
+
+This non-bloated and suckless approach to adding more functionality makes for more practicality of the calculator. However, the other import functions after the user imports should be modified as they are designed to be used for the custom functions defined later on, which are used for degree-based trigonometry. 
 
 ## To Do
 This project is in active development, and these are some of the things I'd like and want to implement in the future:
-- [X] Make uninstall script.
+- [X] Make an uninstall script.
 - [ ] Make two different versions of the calculator - one minimal edition and another feature edition. 
 - [ ] Put algebra support into the calculator. 
 - [ ] Make the calculator ignore python-specific functions and expressions and only recognize math expressions. 
