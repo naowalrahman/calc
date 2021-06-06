@@ -23,27 +23,27 @@ This non-bloated and suckless approach to adding more functionality makes for mo
 
 The default functions included are sine, cosine, tangent, inverse sine, inverse cosine, inverse tangent, square root, and pi. The default trigonometry functions are calculated in degrees. However, if you wish to use radians, there are trigonmetric functions available starting with r and then the function name that calculate values in radians (like `rsin` or `artan`). The inverse functions in radians start with ar and then the function name. This is the reference list for the names of the functions:
 
-```
-                        add:   + 
-                   subtract:   - 
-                   multiply:   *
-                     divide:   /
-                   exponent:   **
-             sine (degrees):   sin()
-           cosine (degrees):   cos()
-          tangent (degrees):   tan()
-     inverse sine (degrees):   asin()
-   inverse cosine (degrees):   acos()
-  inverse tangent (degrees):   atan()
-              sine (radian):   rsin()
-            cosine (radian):   rcos()
-           tangent (radian):   rtan()
-      inverse sine (radian):   arsin()
-    inverse cosine (radian):   arcos()
-   inverse tangent (radian):   artan()
-                square root:   sqrt() 
-                         pi:   pi
-```
+|**Function name**|**Function reference**|
+|-----------------|----------------------|
+|Add|+|
+|Subtract|-|
+|Multiply|*|
+|Divide|/|
+|Exponent|**|
+|Sine (degrees)|sin()|
+|Cosine (degrees)|cos()|
+|Tangent (degrees)|tan()|
+|Inverse sine (degrees)|asin()|
+|Inverse cosine (degrees)|acos()|
+|Inverse tangent (degrees)|atan()|
+|Sine (radians)|rsin()|
+|Cosine (radians)|rcos()|
+|Tangent (radians)|rtan()|
+|Inverse sine (radians)|arsin()|
+|Inverse cosine (radians)|arcos()|
+|Inverse tangent (radians)|artan()|
+|Square root|sqrt()|
+|Pi|pi|
 
 At anytime, you can type `help` into the calculator to get a list of these function names. To exit the calculator, type `exit` or `q`. To clear the screen, type `clear`. 
 
