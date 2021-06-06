@@ -63,7 +63,7 @@ sudo sh ./install.sh
 To update the calculator simply run `calc-update` in your  terminal. To uninstall the calculator, run the `uninstall.sh` file from the cloned git repository with the command `sudo sh ./uninstall.sh`. 
 
 ## To Do
-This project is in active development, and these are some of the things I'd like and want to implement in the future:+
+This project is in active development, and these are some of the things I'd like and want to implement in the future:
 - [X] Make uninstall script.
 - [ ] Make two different versions of the calculator - one minimal edition and another feature edition. 
 - [ ] Put algebra support into the calculator. 
