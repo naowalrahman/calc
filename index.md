@@ -73,4 +73,4 @@ This project is in active development, and these are some of the things I'd like
 - [ ] Make the calculator ignore python-specific functions and expressions and only recognize math expressions. 
 
 ## Contributions 
-Any contributions are welcome! If any issue arises, make an issue in the issues tab. If you want to contribute to this calculator, feel free to start a pull request! 
+Any contributions are welcome! If any issue arises, make an issue on this project's [GitHub page](https://github.com/naowalrahman/calc/issues). If you want to contribute to this calculator, feel free to start a pull request on GitHub! 
