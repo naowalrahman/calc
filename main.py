@@ -47,7 +47,10 @@ parse_expr_dict = {"sin": sin, "cos": cos, "tan": tan, "asin": asin, "acos": aco
 def calc(user_input):
     # use sympy parse_expr to safely evaluate math expression
     global parse_expr_dict
-    return "\n{0} = ( \033[1m".format(user_input) + str(float(parse_expr(user_input, local_dict=parse_expr_dict))) + "\033[0m )\n\n"
+    if os.name == "nt":
+        return "\n{0} = ( ".format(user_input) + str(float(parse_expr(user_input, local_dict=parse_expr_dict))) + " )\n\n"
+    else: 
+        return "\n{0} = ( \033[1m".format(user_input) + str(float(parse_expr(user_input, local_dict=parse_expr_dict))) + "\033[0m )\n\n"
 
 
 def graph():
@@ -101,7 +104,10 @@ def graph():
 def algebra_solver(inp):
     x = Symbol("x")
     evaluation = inp.replace(" ", "").split("=")
-    res = "\n{0} -> ( \033[1m".format(inp) + str(solve(Eq(eval(evaluation[0]), eval(evaluation[1])))) + "\033[0m )\n\n"
+    if os.name == "nt": 
+        res = "\n{0} -> ( ".format(inp) + str(solve(Eq(eval(evaluation[0]), eval(evaluation[1])))) + " )\n\n"
+    else:
+        res = "\n{0} -> ( \033[1m".format(inp) + str(solve(Eq(eval(evaluation[0]), eval(evaluation[1])))) + "\033[0m )\n\n"
     return res
     
 
