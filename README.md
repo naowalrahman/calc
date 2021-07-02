@@ -18,6 +18,7 @@ The default functions included are sine, cosine, tangent, inverse sine, inverse 
 |Multiply|*|
 |Divide|/|
 |Exponent|**|
+|Factorial|!|
 |Sine (degrees)|sin()|
 |Cosine (degrees)|cos()|
 |Tangent (degrees)|tan()|
