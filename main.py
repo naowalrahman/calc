@@ -104,11 +104,13 @@ def graph():
 def algebra_solver(inp):
     x = Symbol("x")
     evaluation = inp.replace(" ", "").split("=")
-    if os.name == "nt": 
-        res = "\n{0} -> ( ".format(inp) + str(solve(Eq(eval(evaluation[0]), eval(evaluation[1])))) + " )\n\n"
-    else:
-        res = "\n{0} -> ( \033[1m".format(inp) + str(solve(Eq(eval(evaluation[0]), eval(evaluation[1])))) + "\033[0m )\n\n"
-    return res
+    if "os" not in inp: 
+        if os.name == "nt": 
+            res = "\n{0} -> ( ".format(inp) + str(solve(Eq(eval(evaluation[0]), eval(evaluation[1])))) + " )\n\n"
+        else:
+            res = "\n{0} -> ( \033[1m".format(inp) + str(solve(Eq(eval(evaluation[0]), eval(evaluation[1])))) + "\033[0m )\n\n"
+        return res
+    return "invalid input\n\n"
     
 
 ########## EXPRESSION DRIVERS ##########
@@ -133,6 +135,7 @@ while True:
                    subtract:   - 
                    multiply:   *
                      divide:   /
+                  factorial: !
                    exponent:   **
              sine (degrees):   sin()
            cosine (degrees):   cos()
